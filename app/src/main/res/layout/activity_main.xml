@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/id"
         android:layout_margin="10dp"
+        android:inputType="number"
         android:textStyle="bold"
         android:hint="Enter id"
         />
