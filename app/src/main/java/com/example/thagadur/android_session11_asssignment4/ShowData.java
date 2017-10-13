@@ -36,44 +36,14 @@ public class ShowData extends Activity{
                 CR.moveToFirst();
                 String NAME = "";
                 Log.d("ShowDAta", "Before fetch");
-                /**  do {
-                 if (CR.getString(0) != null && CR.getString(1) != null && CR.getString(2) != null) {
-                 tvid.setText(CR.getString(0));
-                 tvfirst.setText(CR.getString(1));
-                 tvsecond.setText(CR.getString(2));
-
-                 Log.d("ShowDAta", "Before fetch");
-                 }
-                 } while (CR.moveToNext());
-
-                 */
-
 
                 int i = 0;     // i refers to the row
                 while (CR.moveToNext()) {
 
                     if (CR.getString(i) != null && CR.getString(i+1)!=null && CR.getString(i+2)!=null) {
 
-
-
-
-                        /**   DEAD CODE    IGNORE THIS   JUST FOR CHECKING PURPOSE  FOR DEVELOPER ONLY    REFER THE UNCOMMENTED CODE
-                         Toast.makeText(getApplicationContext(), "Id: "+CR.getString(i)+" FirstName: "+CR.getString(i+1)+" LastName: "+CR.getString(i+2), Toast.LENGTH_SHORT).show();
-                         Snackbar snackbar = Snackbar.make(view,"Id: "+CR.getString(i)+" FirstName: "+CR.getString(i+1)+" LastName: "+CR.getString(i+2),Snackbar.LENGTH_LONG);
-                         snackbar.show();
-                         */
-
-
-
-
-                        // Main code functionality
-                        // Textview created dynamically as user can input any number of data in the database
-                        // so functioning has to be dynamic in nature to meet the needs
-
-
                         View linearLayout =  findViewById(R.id.info);
                         LinearLayout linearLayoutt = (LinearLayout)findViewById(R.id.info);
-
 
                         TextView id = new TextView(ShowData.this);
                         TextView fname = new TextView(ShowData.this);

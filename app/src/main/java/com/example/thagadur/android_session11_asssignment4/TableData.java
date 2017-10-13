@@ -16,7 +16,7 @@ public class TableData {
 
     public static abstract class TableInfo implements BaseColumns
     {
-        /** KEYSSSS  */
+        /** Data base Details  */
         public static final String id = "idd";
         public static final String firstname = "firstname";
         public static final String lastname = "lastname";
